@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnablePreviewInEditMode="false">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlAccentColor="@android:color/background_dark" />
+
+            <!--<android.support.v4.widget.NestedScrollView-->
+            <com.wythe.mall.view.MyNestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.appbar.CollapsingToolbarLayout
+                            android:id="@+id/collapse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:contentScrim="?attr/colorPrimary"
+                            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                            app:titleEnabled="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <include
+                                    layout="@layout/product_detail_top"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                    </LinearLayout>
+
+                    <net.lucode.hackware.magicindicator.MagicIndicator
+                        android:id="@+id/magic_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/mainWhite" />
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+            </com.wythe.mall.view.MyNestedScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/AppTheme.Toolbar"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/holo_red_dark"
+                app:layout_collapseMode="pin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/back_black" />
+
+                    <androidx.appcompat.widget.ButtonBarLayout
+                        android:id="@+id/buttonBarLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/toolbar_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:maxLines="1"
+                            android:text="心动商品"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_16" />
+                    </androidx.appcompat.widget.ButtonBarLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/kefu"
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/ic_supplier" />
+
+        <ImageView
+            android:id="@+id/shop_name"
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/ic_comm_shop" />
+
+        <ImageView
+            android:id="@+id/shopping_car"
+            android:layout_width="102dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/ic_comm_shopping" />
+
+        <ImageView
+            android:id="@+id/now_pay"
+            android:layout_width="102dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/ic_comm_pay" />
+    </LinearLayout>
+</RelativeLayout>
+

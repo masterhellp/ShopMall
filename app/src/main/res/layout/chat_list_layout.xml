@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_headImg"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/general_comment_headimg" />
+
+    <RelativeLayout
+        android:id="@+id/comment_contentPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/chat_headImg">
+
+        <TextView
+            android:id="@+id/customer_nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="12312312312"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/chat_timeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/customer_nameView"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/customer_nameView"
+            android:text="2012-12-12 12:!2"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/comment_contentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_nameView"
+            android:layout_marginTop="4dp"
+            android:lineSpacingExtra="5dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="8dp"
+            android:text="12312312"
+            android:textSize="16dp"
+            app:stv_corner="10dp"
+            app:stv_solid="@color/white"
+            app:stv_stroke_color="#ff0000" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/comment_contentPart"
+        android:layout_marginTop="10dp"
+        android:background="#dedede" />
+
+</RelativeLayout>

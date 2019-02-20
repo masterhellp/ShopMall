@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/search_inputPart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/search_backImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_back" />
+
+        <RelativeLayout
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28px"
+            android:layout_marginRight="28px"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/search_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/search_button"
+            android:layout_toRightOf="@id/search_backImg"
+            android:background="@drawable/search_inputview_bg">
+
+            <ImageView
+                android:id="@+id/search_delInputImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/bt_fabu_biaotidel"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_search" />
+
+            <AutoCompleteTextView
+                android:id="@+id/search_inputView"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@id/search_delInputImg"
+                android:layout_toRightOf="@+id/search_icon"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入搜索关键词"
+                android:imeOptions="actionSearch"
+                android:maxLength="16"
+                android:paddingLeft="16px"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/search_inputPart"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/search_recomTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/magic_indicator"
+        android:padding="12dp"
+        android:text="热门搜索推荐"
+        android:textSize="12sp"
+        android:textColor="@color/color_333" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_recomTab"
+        android:layout_margin="12dp"
+        />
+
+</RelativeLayout>

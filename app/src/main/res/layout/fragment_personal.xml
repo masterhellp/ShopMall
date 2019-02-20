@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.wythe.mall.view.TitleBarView
+        android:id="@+id/titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/personal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 用户信息 -->
+
+            <LinearLayout
+                android:id="@+id/personal_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff0000"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/personal_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp">
+
+                    <RelativeLayout
+                        android:id="@+id/personal_for_login_info"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_img_view"
+                            android:layout_width="@dimen/personal_user_img_view_width"
+                            android:layout_height="@dimen/personal_user_img_view_height"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/personal_user_photo_marginleft"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/personal_icon_default_avatar" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:layout_toRightOf="@id/user_img_view"
+                            android:orientation="vertical"
+                            android:paddingBottom="4dp">
+
+                            <TextView
+                                android:id="@+id/who_and_say_hello"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:lineSpacingMultiplier="1.1"
+                                android:singleLine="true"
+                                android:text="朝阳群众小郭"
+                                android:textColor="@color/personal_info_text"
+                                android:textSize="@dimen/personal_info_text_size_l" />
+
+                            <TextView
+                                android:id="@+id/user_level"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:lineSpacingMultiplier="1.1"
+                                android:singleLine="true"
+                                android:visibility="gone"
+                                android:textColor="@color/personal_info_text"
+                                android:textSize="@dimen/personal_info_text_size_m" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <!-- 未登录页面 -->
+
+                    <RelativeLayout
+                        android:id="@+id/personal_for_not_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/personal_click_for_login"
+                            android:layout_width="@dimen/personal_user_img_view_width"
+                            android:layout_height="@dimen/personal_user_img_view_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/personal_avatar_unlogin_selector"
+                            android:scaleType="centerCrop"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--</LinearLayout>-->
+            <LinearLayout style="@style/wrap_layout">
+                <LinearLayout
+                    android:id="@+id/mine_order"
+                    style="@style/top_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="我的订单" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <!-- 分割线 -->
+                <View style="@style/bg_line" />
+                <!-- 上圆角-->
+               <!--<LinearLayout-->
+                    <!--android:id="@+id/mine_Money"-->
+                    <!--style="@style/top_layout">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/usertext"-->
+                        <!--android:text="我的钱包" />-->
+
+                    <!--<ImageView style="@style/img_arrow" />-->
+                <!--</LinearLayout>-->
+
+                <!--&lt;!&ndash; 分割线 &ndash;&gt;-->
+                <!--<View style="@style/bg_line" />-->
+
+                <!-- 无圆角-->
+                <LinearLayout
+                    android:id="@+id/layout_myAddress"
+                    style="@style/mid_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="我的地址" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <View style="@style/bg_line" />
+                <!-- 下圆角-->
+
+            </LinearLayout>
+
+            <!-- 全圆角-->
+            <LinearLayout style="@style/wrap_layout">
+
+                <LinearLayout
+                    android:id="@+id/auxiliary"
+                    style="@style/single_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="猜我喜欢" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <View style="@style/bg_line" />
+
+                <LinearLayout
+                    android:id="@+id/about"
+                    style="@style/single_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="关于我们" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/promotion_iv"
+        android:layout_width="@dimen/promotion_width"
+        android:layout_height="@dimen/promotion_height"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/personal_kf"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:background="@drawable/ic_personal_kf"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dip"
+        android:layout_marginLeft="25dip"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_b"
+        android:text="@string/logout"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="16sp">
+    </Button>
+
+
+</LinearLayout>

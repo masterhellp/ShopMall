@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="#fcfcfc"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="32px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancel"
+        android:layout_marginBottom="14px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/qualityReason"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:text="质量问题"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/pk_fenge_color" />
+
+        <TextView
+            android:id="@+id/queShaoReason"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:text="缺少件"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/pk_fenge_color" />
+
+        <TextView
+            android:id="@+id/notWant"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:text="不想要了"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/pk_fenge_color" />
+
+        <TextView
+            android:id="@+id/wrongGoods"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:text="发错货"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/pk_fenge_color" />
+
+        <TextView
+            android:id="@+id/bumReason"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:text="商品与页面描述不符"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/pk_fenge_color" />
+
+        <TextView
+            android:id="@+id/others"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:text="其他"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

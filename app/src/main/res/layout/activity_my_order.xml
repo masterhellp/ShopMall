@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.orders.MyOrderActivity">
+
+    <com.wythe.mall.view.TitleBarView
+        android:id="@+id/order_titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:clipToPadding="false"
+        android:layout_below="@id/order_titleView">
+
+        <ListView
+            android:id="@+id/order_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/order_noContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_no_contant"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/home_tab_no_data" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_no_contant"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="订单竟然是空的，\n 快去shopping充实自己吧！"
+            android:textColor="#808080"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

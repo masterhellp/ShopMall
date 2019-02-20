@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/order_contentPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/goods_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/goods_img"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="4dp"
+                android:maxLines="2"
+                android:text="我是商品的名字我是商品的名字我是商品的名字我是商品的名字我是商品的名字"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 124.34"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/goods_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="数量：5"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/order_contentPart"
+        android:layout_marginLeft="102dp"
+        android:background="#dedede" />
+
+
+    <com.coorchice.library.SuperTextView
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_contentPart"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:padding="6dp"
+            android:text="现在去评价"
+            android:textSize="14sp"
+            app:stv_corner="3dp"
+            app:stv_solid="@color/white"
+            app:stv_stroke_color="#f89628"
+            app:stv_stroke_width="0.5dp" />
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_contentPart"
+        android:layout_toLeftOf="@id/edit_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:padding="6dp"
+        android:text="查看二维码"
+        android:textSize="14sp"
+        app:stv_corner="3dp"
+        app:stv_solid="@color/white"
+        app:stv_stroke_color="#f89628"
+        app:stv_stroke_width="0.5dp" />
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/commit_makeSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_contentPart"
+        android:layout_toLeftOf="@id/qr_code"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:padding="6dp"
+        android:text="确认收货"
+        android:textSize="14sp"
+        app:stv_corner="3dp"
+        app:stv_solid="@color/white"
+        app:stv_stroke_color="#f89628"
+        app:stv_stroke_width="0.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/edit_button"
+        android:layout_marginTop="10dp"
+        android:background="#dedede" />
+
+</RelativeLayout>

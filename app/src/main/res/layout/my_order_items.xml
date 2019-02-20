@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/order_tabTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="待支付订单"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/topPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_tabTitle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/shop_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/a" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/shop_image">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.coorchice.library.SuperTextView
+                    android:id="@+id/refount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_contentPart"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="6dp"
+                    android:text="申请退款"
+                    android:textSize="14sp"
+                    app:stv_corner="3dp"
+                    app:stv_solid="@color/white"
+                    app:stv_stroke_color="#f89628"
+                    app:stv_stroke_width="0.5dp" />
+
+                <LinearLayout
+                    android:id="@+id/dingdan_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/refount"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/shop_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="订单号11111"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/create_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="2012-12-12 12:!2"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/shop_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/shop_image"
+            android:background="#dedede" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentPart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/topPart"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/order_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="$123"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/order_money"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="风干牛肉、蜂蜜等6件商品"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/contentPart"
+        android:layout_marginLeft="10dp"
+        android:background="#dedede" />
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"
+        android:padding="6dp"
+        android:text="去支付（还剩11分12妙）"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:stv_corner="3dp"
+        app:stv_solid="@color/white"
+        app:stv_stroke_color="@color/red"
+        app:stv_stroke_width="0.5dp" />
+
+</RelativeLayout>

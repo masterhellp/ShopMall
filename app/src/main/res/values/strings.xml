@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">宅智汇</string>
+    <string name="action_settings">设置</string>
+    <string name="more_settings">更多设置</string>
+    <string name="service_feedback">服务/反馈</string>
+    <string name="about">关于</string>
+    <string name="message_setting">推送消息设置</string>
+    <string name="message_center">消息中心</string>
+    <string name="express_message">物流通知</string>
+    <string name="clear_local_cache">清楚本地缓存</string>
+    <string name="home_my_like">我的关注</string>
+    <string name="home_category">分类</string>
+    <string name="home_my_yipei">个人中心</string>
+    <string name="home_wuliu">查看物流</string>
+    <string name="home_ticket">领券中心</string>
+    <string name="home_bbs">论坛</string>
+    <string name="home_score">积分兑换</string>
+    <string name="score">积分</string>
+    <string name="score_detail">积分明细</string>
+    <string name="home_invoice">开票中心</string>
+    <string name="more">更多</string>
+    <string name="approval_tip">审核提示</string>
+    <string name="home_enter_miaosha">进入秒杀专场</string>
+    <string name="none"></string>
+    <string name="personal_personal">个人中心</string>
+    <string name="account_manager">账户管理</string>
+    <string name="account_name">昵称：</string>
+    <string name="message_code2">验证码已发送至：</string>
+    <string name="message_code3">的手机上</string>
+    <string name="recharge">充值</string>
+    <string name="more_information">了解详情</string>
+    <string name="add_amount">提升额度</string>
+    <string name="recharge_amount">充值金额</string>
+    <string name="recharge_tip">请输入充值金额</string>
+    <string name="recharge_confirm">确认充值</string>
+    <string name="homeActivity_autoComplete">车型/产品型号/零件名称</string>
+    <string name="yipei_car_manager">个人管家</string>
+    <string name="all">全部</string>
+    <!--  购物车 -->
+    <string name="cart">购物车</string>
+    <string name="cartinfo_no">您的购物车是空的，快去选购吧！</string>
+    <string name="cartinfo_synchronous">购物车同步中</string>
+    <string name="cart_logininfo">您可以在登录后系统后同步电脑与手机购物 \n车中的商品</string>
+    <string name="cart_market">促销大卖场</string>
+    <!--注册-->
+    <string name="regist_get_msgCode">获取验证码</string>
+    <string name="regist_next">下一步</string>
+    <string name="confirm">确定</string>
+    <string name="regist_finish">完成</string>
+    <string name="regist_cancel"></string>
+    <string name="regist_pleaseSetPassword">可以打开明文开关检查密码</string>
+
+    <string name="regist_inputMessageCode">请输入短信验证码</string>
+    <string name="find_password_inputMessageCode">请输入短信验证码</string>
+    <string name="regist_setpwd">请设置登录密码</string>
+    <string name="input_must">(必填)</string>
+    <string name="show_jdagreement">用户注册协议</string>
+    <string name="regist_inputPhone">请输入手机号</string>
+    <string name="find_password_hint">请输入已验证手机</string>
+    <string name="regist_inputImageCode">请输入图片验证码</string>
+    <string name="regist_inputImageError">图片验证码格式错误</string>
+    <string name="regist_accept_agreement">同意</string>
+
+    <string name="regist_unbind">解绑手机</string>
+    <string name="regist_inputPhotoNum">请输入手机号码</string>
+    <string name="click_upload">点击上传</string>
+    <string name="phone_number">请输入手机号码</string>
+    <string name="email">邮箱</string>
+    <string name="qq">QQ</string>
+    <string name="wechat">微信</string>
+    <string name="interet_product">您感兴趣的车型或产品</string>
+    <string name="company_name">公司名称</string>
+    <string name="company_location">公司所在地</string>
+    <string name="company_address">公司地址</string>
+    <string name="company_type">企业性质</string>
+    <string name="company_certificate_photo">请上传营业执照照片</string>
+    <string name="company_home_photo">请上门头照片</string>
+    <string name="regist_phoneNumError">手机号格式错误</string>
+    <string name="regist_freshImageCode">请刷新图片验证码后输入左边文本框</string>
+    <string name="regist_sendTo">我们将发送短信验证码至：</string>
+    <string name="regist_pleasedInput">请输入</string>
+    <string name="contact_name">联系人姓名</string>
+    <string name="contact_position">联系人职位</string>
+    <string name="contact_phone">联系人电话</string>
+    <string name="regist_messageCode">收到的短信验证码:</string>
+    <string name="regist_messageCodeError">短信验证码格式错误</string>
+    <string name="regist_unbindMsg_confirm">1、确认注册将解除%1$s与原账号的绑定，并注册一个与原来账号无关的新账号；\n
+2、原账号不能再使用该手机号登录，可能造成订单、资产无法查看及使用，若忘记用户名请联系客服；\n3、若原账号为您本人所有，建议直接登录或找回密码；</string>
+    <string name="regist_unbindTitle">确认解绑并注册</string>
+    <string name="regist_unbindMsg">该手机号已被使用，继续注册将会与原账号解绑。如果您希望使用原账号，请返回登录页直接登录。是否继续注册？</string>
+    <string name="back_tip">点击“返回”将中断注册，确定返回？</string>
+    <string name="regist_lianxi"><u>联系客服</u></string>
+    <string name="pwd_error">您的密码格式有误。请将密码位数设置为6&#8211;20位，建议不要使用过于简单的密码。</string>
+    <string name="pwd_formatError">您的密码格式有误。请将密码设置为6&#8211;20位，可使用数字、字母、字符的组合，请不要输入空格、回车等非法字符。</string>
+    <string name="setPwd_hint">请设置为6&#8211;20位字符</string>
+
+    <string name="regist_setPasswordTip">密码由6-20位字符组成，包含至少两种以上字母、数字，或者半角字符，区分大小写</string>
+    <string name="reset_password_tip">6-20位,不能与原密码相同</string>
+    <string name="regist_username_tip">由数字、字母或下划线组成，长度6到16位</string>
+    <string name="registTip">注册成功</string>
+    <string name="unbinfTip">解绑注册成功</string>
+    <!--登录-->
+    <string name="user_name">账号：</string>
+    <string name="username">用户名</string>
+    <string name="history_receiver">请填写历史收货人姓名</string>
+    <string name="history_order_receiver">历史已完成订单中的收货人</string>
+    <string name="verification_code">验证码：</string>
+    <string name="verification_code2">验证码</string>
+    <string name="user_password">密码：</string>
+    <string name="user_password_tip">请设置登录密码</string>
+    <string name="user_password_new_tip">请设置新的登录密码</string>
+    <string name="user_password_confirm_tip">请再次输入登录密码</string>
+    <string name="login_failed_title">登录失败</string>
+    <string name="login_failed_message">登录失败：用户名或密码错误</string>
+    <string name="login_user_name_error_hint">请输入用户名</string>
+    <string name="login_user_password_hint">请输入密码</string>
+    <string name="login_ver_hint">请输入验证码</string>
+    <string name="quick_register">手机快速注册</string>
+    <string name="find_password">找回密码</string>
+    <string name="login_username_hint">用户名/邮箱/手机号</string>
+    <string name="login_pd_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="login_yipei">登录</string>
+    <string name="logout">退出登录</string>
+    <!--底部菜单-->
+    <string name="navigation_home">首页</string>
+    <string name="navigation_category">分类</string>
+    <string name="navigation_share">分享</string>
+    <string name="navigation_cart">购物车</string>
+    <string name="navigation_personal">我的</string>
+
+    <string-array name="pg_new_feedback_contact_type">
+        <item>功能意见</item>
+        <item>界面意见</item>
+        <item>您的新需求</item>
+    </string-array>
+
+    <!-- 意见反馈 -->
+    <string name="pg_new_feedback_type">请选择反馈类型：</string>
+    <string name="pg_new_feedback_type_text_hint">请选择</string>
+    <string name="pg_new_feedback_error">反馈意见不能为空，请输入</string>
+    <string name="pg_new_feedback_type_error">反馈类型不能为空，请选择</string>
+    <string name="pg_new_feedback_submit_faill">提交失败，请重试</string>
+    <string name="pg_new_feedback_content">反馈内容：</string>
+    <string name="pg_new_feedback_contact">联系方式：</string>
+    <string name="pg_new_feedback_contact_hint">您的姓名、手机号、邮箱等</string>
+    <string name="pg_new_feedback_qq_content">问题反馈QQ群：308170329</string>
+
+    <!--我的钱包-->
+    <string name="pocket_yue">账户余额</string>
+    <string name="pocket_yirongdai">易融贷可用余额</string>
+    <string name="yirongdai">易融贷</string>
+    <string name="pocket_jifen">积分</string>
+    <string name="pocket_hongbao">红包</string>
+    <string name="pocket_ticket">优惠券</string>
+    <string name="title_activity_goods_detail">GoodsDetailActivity</string>
+    <string name="sign">签到</string>
+    <string name="integral">积分</string>
+    <string name="Japanese_currency">日币</string>
+    <string name="friendliness">友好度</string>
+    <string name="prestige">威望</string>
+    <string name="edit">编辑</string>
+    <string name="interest_label">兴趣标签</string>
+
+    <string name="follow">关注</string>
+    <string name="edit_information">编辑资料</string>
+    <string name="fans">粉丝</string>
+    <string name="no_answer_get_first_answer">还没有人回答，抢一楼~</string>
+    <string name="answer">答</string>
+    <string name="no_more">没有更多了</string>
+    <string name="more_loading">更多加载中...</string>
+    <string name="proDetail_tips">1、生鲜“优鲜赔”绿色通道
+                                \n生鲜自营商品的破损或腐坏等问题，请在商品签收后48小时内提交“优鲜赔”申请，100分钟内审核通过后即享补偿，无需返回商品；非鲜活易腐类商品需上门取件。
+                                \n 2、专业生鲜客服团队—让您售后无忧
+                                \n 微信在线客服：JD-fresh
+                                \n 京东生鲜客服电话：400-606-3311
+                                \n 服务时间：09:00-24:00
+                                \n 生鲜商品售后政策
+                                \n 注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，京东生鲜不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若京东生鲜没有及时更新，请大家谅解！
+                                \n 权利声明
+                                \n 该应用所有商品信息、客户评价、商品咨询、网友讨论等内容，是重要的经营资源，未经许可，禁止非法转载使用。
+                                    注：本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。
+                                \n 价格说明：
+                                \n 现售价：现售价为商品的销售价，是您最终决定是否购买商品的依据。
+                                \n 划线价：商品展示的划横线价格为参考价，并非原价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在京东平台上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。
+                                \n 折扣：如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。
+                                \n 异常问题：商品促销信息以商品详情页“促销”栏中的信息为准；\n 商品的具体售价以订单结算页价格为准；\n 如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。</string>
+
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="no_goods_incart">还没有商品，赶快去shopping吧！</string>
+
+    //微信支付
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_by_wx_title">通过微信支付</string>
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+</resources>

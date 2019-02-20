@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    packagingOptions {
+        pickFirst 'META-INF/*'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.wythe.mall"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    api 'com.facebook.fresco:fresco:0.11.0'
+    api 'de.hdodenhof:circleimageview:2.1.0'
+    api 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    api 'com.youth.banner:banner:1.1.5'
+    api 'com.zhy:okhttputils:2.6.2'
+    api 'com.google.firebase:firebase-appindexing:10.0.0'
+    api 'com.zhy:base-adapter:3.0.2'
+    api 'com.squareup.okhttp3:okhttp:3.2.0'
+    api 'com.android.support:multidex:1.0.1'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    api 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
+    api 'com.android.support:design:28.0.0-alpha1'
+    api 'com.jakewharton:butterknife:7.0.0'
+    api 'com.github.hackware1993:MagicIndicator:1.5.0'
+    api 'com.github.chenBingX:SuperTextView:v3.1.1'
+    api 'com.google.code.gson:gson:2.2.4'
+    api 'com.smartTop:jd-address:1.0.3'
+    api 'com.alibaba:fastjson:1.2.19'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-7'
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation files('libs/MobCommons-2018.0704.1311.jar')
+    implementation files('libs/MobTools-2018.0704.1157.jar')
+    implementation files('libs/SDKWrapper-2018.0201.1609.jar')
+    implementation files('libs/SMSSDK-3.2.1.jar')
+    api 'com.github.ikidou:FragmentBackHandler:2.1'
+    api 'com.zhy:autolayout:1.4.5'
+    implementation files('libs/alipaySdk-20180601.jar')
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation files('libs/httpclient-4.3.6.jar')
+    implementation files('libs/httpclient-cache-4.3.4.jar')
+    implementation files('libs/httpcore-4.3.3.jar')
+    implementation files('libs/httpmime-4.3.6.jar')
+    implementation files('libs/commons-logging-1.2.jar')
+}

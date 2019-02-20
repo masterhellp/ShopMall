@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/index_search_head"
+        android:layout_width="match_parent"
+        android:id="@+id/index_searchLayout"
+        android:layout_height="50dp" />
+
+    <ScrollView
+        android:id="@+id/pull_refresh_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/index_searchLayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/index_hotPart"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#eeeeee"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="19dp"
+                    android:src="@mipmap/index_recom" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40px"
+                    android:src="@mipmap/index_recom_more" />
+            </RelativeLayout>
+
+            <com.wythe.mall.view.GridViewForScrollView
+                android:id="@+id/index_hotListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:layout_marginTop="12dp"
+                android:numColumns="2" />
+
+            <RelativeLayout
+                android:id="@+id/index_recomPart"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#eeeeee"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/icon_letters" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40px"
+                    android:src="@mipmap/index_recom_more" />
+            </RelativeLayout>
+
+            <com.wythe.mall.view.GridViewForScrollView
+                android:id="@+id/index_recomListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:layout_marginTop="12dp"
+                android:numColumns="2" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

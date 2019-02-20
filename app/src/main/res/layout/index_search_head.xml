@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_box_layout"
+    android:layout_width="match_parent"
+    android:background="@color/red"
+    android:gravity="center"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:id="@+id/search_inputPart"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/search_logoImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/search_logoImg"
+            android:background="@drawable/search_inputview_bg">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/search_icon"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/search_icon"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入搜索内容"
+                android:maxLength="16"
+                android:paddingLeft="16px"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

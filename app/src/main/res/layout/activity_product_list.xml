@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.wythe.mall.view.TitleBarView
+        android:id="@+id/titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--排序条件-->
+    <LinearLayout
+        android:id="@+id/sort_search_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/titleBarView"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp">
+        <!-- 综合 -->
+        <RelativeLayout
+            android:id="@+id/sort_search_button_composite"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/sort_search_button_add_time_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="综合"
+                android:textColor="@color/product_list_tab_color_v38"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/sort_search_button_composite_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/red" />
+
+        </RelativeLayout>
+
+        <!-- 销量 -->
+        <RelativeLayout
+            android:id="@+id/sort_search_button_sales"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/sort_search_button_sales_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="销量"
+                android:textColor="@color/product_list_tab_color_v38"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/tab_sale_img"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/red" />
+
+        </RelativeLayout>
+
+        <!-- 价格 -->
+
+        <RelativeLayout
+            android:id="@+id/sort_search_button_price"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingRight="5dip">
+
+            <TextView
+                android:id="@+id/sort_search_button_price_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:duplicateParentState="true"
+                android:text="价格"
+                android:textColor="@color/product_list_tab_color_v38"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/sort_search_button_price_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sort_search_button_yipei"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:paddingRight="5dip"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/sort_search_button_yipei_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:duplicateParentState="true"
+                android:padding="5dp"
+                android:text="@string/yipei_car_manager"
+                android:textColor="@color/product_list_tab_color_v38"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--商品列表-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/pro_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sort_search_buttons"
+        android:layout_marginTop="10dp">
+
+        <GridView
+            android:id="@+id/pro_Grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:cacheColorHint="#00000000"
+            android:columnWidth="5dip"
+            android:numColumns="2" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_no_contant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleBarView"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_no_contant"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/home_tab_no_data" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_no_contant"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="暂无商品推荐"
+            android:textColor="#808080"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:layout_height="match_parent">
+
+    <com.wythe.mall.view.TitleBarView
+        android:id="@+id/firmOrder_titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firmOrder_titleBarView"
+        android:background="#eeeeee"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#eeeeee"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/address_detailPart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:id="@+id/buy_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收货人：隔壁老王"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/phone_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="1271239988"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/addressPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/address_more"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_address_more" />
+
+                    <TextView
+                        android:id="@+id/address_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/address_more"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingRight="12dp"
+                        android:text="山东省济南是历下区阿手机端拉屎的"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hasNoDefault"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="请选择收货地址 "
+                android:textColor="@color/color_333" />
+
+            <RelativeLayout
+                android:id="@+id/pay_wx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/payImg"
+                    android:layout_width="33dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_zfb" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/payImg"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/pageName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信支付"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/pageName"
+                        android:src="@mipmap/wx_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pageName"
+                        android:text="亿万用户的选择，更快更安全"
+                        android:textColor="#999999"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/wx_select_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_address_checked" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pay_zfb"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/zfb_payImg"
+                    android:layout_width="33dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_zfb_logo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/zfb_payImg"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/pay_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝支付"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pay_style"
+                        android:text="亿万用户的选择，更快更安全"
+                        android:textColor="#999999"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/zfb_select_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_address_unchecked" />
+            </RelativeLayout>
+
+            <com.wythe.mall.view.MyExpandableListView
+                android:id="@+id/goods_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff0000"
+                android:divider="@null"
+                android:groupIndicator="@null"
+                android:scrollbars="none" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="买家留言："
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/message_passText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:background="@null"
+                    android:hint="请输入留言内容"
+                    android:paddingLeft="10dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/goods_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共一件商品  运费：免邮          小计："
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/goods_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥12343"
+                    android:textColor="#f89628"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计：￥12343"
+            android:textColor="#f89628"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/submit_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="#f89628"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="提交订单"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
